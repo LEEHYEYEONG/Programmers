@@ -1,0 +1,9 @@
+def solution(seoul):
+    kim_index = seoul.index("Kim")
+    answer = '김서방은 ' + str(kim_index) + "에 있다"
+    return answer
+
+# def solution(seoul):
+#     return "김서방은 {}에 있다".format(seoul.index('Kim'))
+
+print(solution(["Jane", "Kim"]))
