@@ -12,12 +12,10 @@ def solution(skill, skill_trees):
             if(skill == order_list):
                 answer+=1
         else:
-            check = True
             for j in range(len(order_list)):
                 if(skill[j] != order_list[j]):
-                    check = False
                     break
-            if(check):
+            else:
                 answer += 1
     
     return answer
@@ -37,4 +35,4 @@ def solution(skill, skill_trees):
 
 #     return answer
 
-# print(solution("CBD", ["BACDE", "CBADF", "AECB", "BDA"]))
+print(solution("CBD", ["BACDE", "CBADF", "AECB", "BDA"]))
